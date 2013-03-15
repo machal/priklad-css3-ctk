@@ -9,6 +9,7 @@
 .clearfix:after {
   clear: both;
 }
+/* --- Zakladna --- */
 a img {
   border: 0;
 }
@@ -66,6 +67,15 @@ table th {
   margin: 0 20px 20px 0;
   background-color: white;
   color: darkgrey;
+  -webkit-border-radius: 10px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 10px;
+  -moz-background-clip: padding;
+  border-radius: 10px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .polaroid img {
   max-width: 100%;

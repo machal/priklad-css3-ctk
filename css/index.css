@@ -76,6 +76,11 @@ table th {
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: background 1s 0;
+  -moz-transition: background 1s 0;
+  -o-transition: background 1s 0;
+  -ms-transition: background 1s 0;
+  transition: background 1s 0;
 }
 .polaroid img {
   max-width: 100%;

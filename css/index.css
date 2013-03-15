@@ -61,10 +61,8 @@ table th {
 }
 .polaroid {
   float: left;
-  width: 170px;
-  height: 180px;
   padding: 10px;
-  margin: 0 20px 20px 0;
+  margin: 0 2% 20px 0;
   background-color: white;
   color: darkgrey;
   -webkit-border-radius: 10px;
@@ -81,6 +79,10 @@ table th {
   -o-transition: background 1s 0;
   -ms-transition: background 1s 0;
   transition: background 1s 0;
+  width: 30%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .polaroid img {
   max-width: 100%;
@@ -94,6 +96,9 @@ table th {
   font: 15px/20px sans-serif;
   font-family: 'Covered By Your Grace', cursive;
   font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: hidden;
 }
 .polaroid:hover,
 .polaroid:focus,
@@ -117,8 +122,7 @@ table th {
   color: black;
 }
 .container {
-  width: 1000px;
-  margin: 0 auto;
+  margin: 0 30px;
   zoom: 1;
 }
 .container:before,
@@ -130,10 +134,22 @@ table th {
   clear: both;
 }
 .content {
-  width: 660px;
+  width: 66%;
   float: left;
 }
+@media (max-width: 1000px) {
+  .content {
+    width: auto;
+    float: none;
+  }
+}
 .side {
-  width: 330px;
+  width: 33%;
   float: left;
+}
+@media (max-width: 1000px) {
+  .side {
+    width: auto;
+    float: none;
+  }
 }

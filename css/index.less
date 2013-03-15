@@ -67,15 +67,15 @@ table {
 
 .polaroid {
   float: left;
-  width: 170px;
-  height: 180px;
   padding: 10px;
-  margin: 0 20px 20px 0;
+  margin: 0 2% 20px 0;
   background-color: white;
   color: darkgrey;
   .border-radius(10px);
   .box-shadow(5px 5px 10px rgba(0,0,0,.5));
   .transition(background 1s 0);
+	width: 30%;
+  .box-sizing(border-box);
 }
 
 .polaroid {
@@ -93,6 +93,9 @@ table {
 	  font: 15px/20px sans-serif;
 		font-family: 'Covered By Your Grace', cursive;		
 	  font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: hidden;	
 	}
 }
 
@@ -115,17 +118,26 @@ table {
 // --- Layout ---
 
 .container {
-	width: 1000px;
-	margin: 0 auto;
+	margin: 0 30px;
 	.clearfix;
 }
 
 .content {
-	width: 660px;
+	width: 66%; // 660/1000*100
 	float: left;
+	
+	@media (max-width: 1000px) {
+	  width: auto;
+	  float: none;	
+	}	
 }
 
 .side {
-	width: 330px;
+	width: 33%; // 330/1000*100
 	float: left;
+	
+	@media (max-width: 1000px) {
+	  width: auto;
+	  float: none;	
+	}	
 }

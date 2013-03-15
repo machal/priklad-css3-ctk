@@ -100,6 +100,11 @@ table th {
   background-image: -webkit-linear-gradient(top, #fefcea 0%, #f1da36 100%);
   background-image: -o-linear-gradient(top, #fefcea 0%, #f1da36 100%);
   background-image: linear-gradient(to bottom, #fefcea 0%, #f1da36 100%);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .polaroid .polaroid:hover .head,
 .polaroid .polaroid:focus .head,
